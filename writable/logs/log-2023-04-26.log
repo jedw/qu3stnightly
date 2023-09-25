@@ -1,0 +1,21 @@
+CRITICAL - 2023-04-26 10:50:27 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quiz.php on line 98.
+ 1 APPPATH/Controllers/Quiz.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quiz.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion('The Tenant of Wildfell Hall')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 10:51:39 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quiz.php on line 98.
+ 1 APPPATH/Controllers/Quiz.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quiz.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion('Buzz Aldrin')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-26 10:51:40 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quiz.php on line 98.
+ 1 APPPATH/Controllers/Quiz.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quiz.php', 98, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion('Yuri Gagarin')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

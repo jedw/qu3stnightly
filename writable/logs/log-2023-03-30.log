@@ -1,0 +1,56 @@
+CRITICAL - 2023-03-30 08:17:44 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->submithighscore()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:18:30 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->submithighscore()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:19:35 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->submithighscore()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:20:40 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Quiz->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:22:19 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Quiz->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:22:20 --> Class 'App\Models\HighScoreModel' not found
+in APPPATH/Controllers/Quiz.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Quiz->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:23:07 --> Allowed fields must be specified for model: App\Models\HighScoreModel
+in SYSTEMPATH/BaseModel.php on line 1160.
+ 1 SYSTEMPATH/BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields()
+ 3 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 4 APPPATH/Controllers/Quiz.php(114): CodeIgniter\Model->insert()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->submithighscore()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-30 08:24:12 --> Allowed fields must be specified for model: App\Models\HighScoreModel
+in SYSTEMPATH/BaseModel.php on line 1160.
+ 1 SYSTEMPATH/BaseModel.php(1160): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+ 2 SYSTEMPATH/BaseModel.php(724): CodeIgniter\BaseModel->doProtectFields()
+ 3 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 4 APPPATH/Controllers/Quiz.php(114): CodeIgniter\Model->insert()
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->submithighscore()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

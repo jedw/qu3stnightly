@@ -1,0 +1,81 @@
+CRITICAL - 2023-06-16 07:04:28 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:04:38 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:04:42 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:04:44 --> syntax error, unexpected '(', expecting variable (T_VARIABLE)
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:13:03 --> Illegal offset type
+in APPPATH/Controllers/Quest.php on line 60.
+ 1 APPPATH/Controllers/Quest.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal offset type', 'APPPATH/Controllers/Quest.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getriddle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:13:51 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 79.
+ 1 APPPATH/Controllers/Quest.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 79, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('halima')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:15:17 --> Call to undefined function App\Controllers\get()
+in APPPATH/Controllers/Quest.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('halima')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:27:22 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 60.
+ 1 APPPATH/Controllers/Quest.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getriddle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:29:34 --> Undefined offset: 10
+in APPPATH/Controllers/Quest.php on line 60.
+ 1 APPPATH/Controllers/Quest.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 10', 'APPPATH/Controllers/Quest.php', 60, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getriddle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-16 07:32:50 --> Undefined variable: return
+in APPPATH/Controllers/Quest.php on line 64.
+ 1 APPPATH/Controllers/Quest.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: return', 'APPPATH/Controllers/Quest.php', 64, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getriddle()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

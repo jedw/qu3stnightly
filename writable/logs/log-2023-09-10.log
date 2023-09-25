@@ -1,0 +1,8 @@
+CRITICAL - 2023-09-10 10:10:41 --> password_hash() expects at least 2 parameters, 1 given
+in APPPATH/Controllers/Utility.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'password_hash() expects at least 2 parameters, 1 given', 'APPPATH/Controllers/Utility.php', 28, [...])
+ 2 APPPATH/Controllers/Utility.php(28): password_hash('jonathan')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Utility->hash('jonathan')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Utility))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

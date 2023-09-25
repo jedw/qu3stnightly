@@ -1,0 +1,156 @@
+CRITICAL - 2023-09-25 13:16:10 --> Call to undefined function App\Controllers\str_contain()
+in APPPATH/Controllers/Quest.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:16:23 --> Call to undefined function App\Controllers\str_contain()
+in APPPATH/Controllers/Quest.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:16:29 --> Call to undefined function App\Controllers\str_contain()
+in APPPATH/Controllers/Quest.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:17:57 --> Call to undefined function App\Controllers\str_contains()
+in APPPATH/Controllers/Quest.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:17:58 --> Call to undefined function App\Controllers\str_contains()
+in APPPATH/Controllers/Quest.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:22:08 --> syntax error, unexpected ';'
+in APPPATH/Controllers/Quest.php on line 92.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:22:41 --> Call to undefined function App\Controllers\str_contains()
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('jonathan')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:29:57 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:30:39 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:32:40 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:32:41 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:33:39 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:33:40 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:34:29 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 90.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 90, [...])
+ 2 APPPATH/Controllers/Quest.php(90): preg_match('matthew', 'matthewi')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:35:30 --> syntax error, unexpected ';'
+in APPPATH/Controllers/Quest.php on line 93.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:36:00 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 91.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 91, [...])
+ 2 APPPATH/Controllers/Quest.php(91): preg_match('matthew', '/matthew/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:37:01 --> preg_match(): Delimiter must not be alphanumeric or backslash
+in APPPATH/Controllers/Quest.php on line 91.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): Delimiter must not be alphanumeric or backslash', 'APPPATH/Controllers/Quest.php', 91, [...])
+ 2 APPPATH/Controllers/Quest.php(91): preg_match('matthew', '/$solution/i')
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('matthew')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:46:46 --> syntax error, unexpected ')', expecting ']'
+in APPPATH/Controllers/Quest.php on line 92.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:53:36 --> ini_set(): A session is active. You cannot change the session module's ini settings at this time
+in APPPATH/Controllers/BaseController.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): A session is active. You cannot change the session module\'s ini settings at this time', 'APPPATH/Controllers/BaseController.php', 111, [])
+ 2 APPPATH/Controllers/BaseController.php(111): ini_set('session.use_cookies', '0')
+ 3 APPPATH/Controllers/Quest.php(143): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-25 13:57:54 --> ini_set(): A session is active. You cannot change the session module's ini settings at this time
+in APPPATH/Controllers/BaseController.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): A session is active. You cannot change the session module\'s ini settings at this time', 'APPPATH/Controllers/BaseController.php', 111, [])
+ 2 APPPATH/Controllers/BaseController.php(111): ini_set('session.use_cookies', '0')
+ 3 APPPATH/Controllers/Quest.php(143): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

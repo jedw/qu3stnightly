@@ -1,0 +1,37 @@
+CRITICAL - 2023-07-27 05:08:15 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 81.
+ 1 APPPATH/Controllers/Quest.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 81, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('jon')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-27 05:44:28 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH/Controllers/Quest.php on line 60.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getriddle()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-27 05:45:14 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Controllers/Quest.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-07-27 05:47:07 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 115.
+ 1 APPPATH/Controllers/Quest.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getclue()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-27 05:47:43 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 115.
+ 1 APPPATH/Controllers/Quest.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getclue()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-27 05:47:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Quest.php on line 115.
+ 1 APPPATH/Controllers/Quest.php(115): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Quest.php', 115, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->getclue()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,25 @@
+CRITICAL - 2023-04-03 05:43:54 --> Call to undefined method App\Controllers\Quiz::setJSON()
+in APPPATH/Controllers/Quiz.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->gethighscores()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 05:44:11 --> Call to undefined method App\Controllers\Quiz::setJSON()
+in APPPATH/Controllers/Quiz.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->gethighscores()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 05:47:38 --> Call to undefined method App\Models\HighScoreModel::order_by
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Quiz.php(108): CodeIgniter\Model->__call()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->gethighscores()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-03 05:48:53 --> Call to a member function order_by() on array
+in APPPATH/Controllers/Quiz.php on line 109.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->gethighscores()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

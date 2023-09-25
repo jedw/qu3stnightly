@@ -1,0 +1,27 @@
+CRITICAL - 2023-04-21 05:33:31 --> session_regenerate_id(): Cannot regenerate session id - session is not active
+in SYSTEMPATH/Session/Session.php on line 273.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Cannot regenerate session id - session is not active', 'SYSTEMPATH/Session/Session.php', 273, [])
+ 2 SYSTEMPATH/Session/Session.php(273): session_regenerate_id(true)
+ 3 APPPATH/Controllers/Quiz.php(137): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->endgame()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-21 05:34:06 --> session_regenerate_id(): Cannot regenerate session id - session is not active
+in SYSTEMPATH/Session/Session.php on line 273.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Cannot regenerate session id - session is not active', 'SYSTEMPATH/Session/Session.php', 273, [])
+ 2 SYSTEMPATH/Session/Session.php(273): session_regenerate_id(true)
+ 3 APPPATH/Controllers/Quiz.php(137): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->endgame()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-21 05:34:15 --> session_regenerate_id(): Cannot regenerate session id - session is not active
+in SYSTEMPATH/Session/Session.php on line 273.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_regenerate_id(): Cannot regenerate session id - session is not active', 'SYSTEMPATH/Session/Session.php', 273, [])
+ 2 SYSTEMPATH/Session/Session.php(273): session_regenerate_id(true)
+ 3 APPPATH/Controllers/Quiz.php(137): CodeIgniter\Session\Session->stop()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->endgame()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

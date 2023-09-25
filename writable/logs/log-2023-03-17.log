@@ -1,0 +1,113 @@
+CRITICAL - 2023-03-17 10:30:00 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH/Config/Routes.php on line 55.
+ 1 SYSTEMPATH/CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 2 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-17 10:57:23 --> mysqli_sql_exception: Table 'quiz.quiz' doesn't exist in /var/www/html/quiz_server/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/html/quiz_server/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /var/www/html/quiz_server/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/quiz_server/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/quiz_server/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/quiz_server/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/quiz_server/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /var/www/html/quiz_server/app/Controllers/Quiz.php(45): CodeIgniter\BaseModel->first()
+#7 /var/www/html/quiz_server/system/CodeIgniter.php(927): App\Controllers\Quiz->getquestion()
+#8 /var/www/html/quiz_server/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/quiz_server/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/quiz_server/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-17 10:57:23 --> Table 'quiz.quiz' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/Quiz.php(45): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->getquestion()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 11:12:16 --> Undefined property: App\Controllers\Quiz::$session
+in APPPATH/Controllers/Quiz.php on line 24.
+ 1 APPPATH/Controllers/Quiz.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->status()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-17 12:23:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'quiz' in /var/www/html/quiz_server/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /var/www/html/quiz_server/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /var/www/html/quiz_server/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/html/quiz_server/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/quiz_server/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/quiz_server/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/quiz_server/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /var/www/html/quiz_server/app/Controllers/Quiz.php(67): CodeIgniter\BaseModel->first()
+#7 /var/www/html/quiz_server/system/CodeIgniter.php(927): App\Controllers\Quiz->getquestion()
+#8 /var/www/html/quiz_server/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/quiz_server/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/quiz_server/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'quiz' in /var/www/html/quiz_server/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/quiz_server/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/html/quiz_server/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/quiz_server/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/html/quiz_server/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/html/quiz_server/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /var/www/html/quiz_server/app/Controllers/Quiz.php(67): CodeIgniter\BaseModel->first()
+#6 /var/www/html/quiz_server/system/CodeIgniter.php(927): App\Controllers\Quiz->getquestion()
+#7 /var/www/html/quiz_server/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/quiz_server/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/quiz_server/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-17 12:23:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'quiz'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Quiz.php(67): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->getquestion()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 12:39:44 --> syntax error, unexpected variable "$this"
+in APPPATH/Controllers/Quiz.php on line 81.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 12:42:34 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+in APPPATH/Controllers/Quiz.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 12:42:38 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+in APPPATH/Controllers/Quiz.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 12:44:07 --> Undefined property: App\Controllers\Quiz::$session
+in APPPATH/Controllers/Quiz.php on line 85.
+ 1 APPPATH/Controllers/Quiz.php(85): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-17 12:44:26 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+in APPPATH/Controllers/Quiz.php on line 85.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quiz->answerquestion()
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

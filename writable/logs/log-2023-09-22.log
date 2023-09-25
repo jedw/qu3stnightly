@@ -1,0 +1,36 @@
+ERROR - 2023-09-22 06:49:53 --> mysqli_sql_exception: Column 'session' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `q...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `q...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `q...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `q...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(1059): CodeIgniter\Model->doReplace(Array, false)
+#6 /home/jedw/public_html/challenge/app/Controllers/BaseController.php(99): CodeIgniter\BaseModel->replace(Array)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(135): App\Controllers\BaseController->questsessiontodb()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-22 06:49:53 --> Column 'session' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `questsession` (`session`, `player`, `category`, `mode`, `qnum`, `score`, `lat`, `lon`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, \'\', \'\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `questsession` (`session`, `player`, `category`, `mode`, `qnum`, `score`, `lat`, `lon`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, \'\', \'\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `questsession` (`session`, `player`, `category`, `mode`, `qnum`, `score`, `lat`, `lon`) VALUES (NULL, NULL, NULL, NULL, NULL, NULL, \'\', \'\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `questsession` (`session`, `player`, `category`, `mode`, `qnum`, `score`, `lat`, `lon`) VALUES (:session:, :player:, :category:, :mode:, :qnum:, :score:, :lat:, :lon:)', [...], false)
+ 5 SYSTEMPATH/Model.php(439): CodeIgniter\Database\BaseBuilder->replace([...])
+ 6 SYSTEMPATH/BaseModel.php(1059): CodeIgniter\Model->doReplace([...], false)
+ 7 APPPATH/Controllers/BaseController.php(99): CodeIgniter\BaseModel->replace([...])
+ 8 APPPATH/Controllers/Quest.php(135): App\Controllers\BaseController->questsessiontodb()
+ 9 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+10 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-22 11:51:17 --> Undefined property: App\Controllers\Quest::$HighScoreModel
+in APPPATH/Controllers/Quest.php on line 153.
+ 1 APPPATH/Controllers/Quest.php(153): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Quest::$HighScoreModel', 'APPPATH/Controllers/Quest.php', 153, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->gethighscores()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

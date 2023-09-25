@@ -1,0 +1,8 @@
+CRITICAL - 2023-06-12 04:40:30 --> Undefined variable: lat
+in APPPATH/Controllers/BaseController.php on line 93.
+ 1 APPPATH/Controllers/BaseController.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: lat', 'APPPATH/Controllers/BaseController.php', 93, [...])
+ 2 APPPATH/Controllers/Quest.php(43): App\Controllers\BaseController->questsessiontodb()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->startquest('jonathan')
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

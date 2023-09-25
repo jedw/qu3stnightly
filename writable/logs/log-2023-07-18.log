@@ -1,0 +1,47 @@
+CRITICAL - 2023-07-18 07:03:55 --> Call to undefined method App\Models\LeaderboardModel::order_by
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/Leaderboard.php(18): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->getsorted()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:18:34 --> Undefined variable: LeaderboardModel
+in APPPATH/Controllers/Leaderboard.php on line 24.
+ 1 APPPATH/Controllers/Leaderboard.php(24): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: LeaderboardModel', 'APPPATH/Controllers/Leaderboard.php', 24, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->leaderboard()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:20:21 --> Undefined variable: teamcode
+in APPPATH/Views/leaderboard.php on line 25.
+ 1 APPPATH/Views/leaderboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: teamcode', 'APPPATH/Views/leaderboard.php', 25, [])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/leaderboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('leaderboard', [], true)
+ 5 APPPATH/Controllers/Leaderboard.php(26): view('leaderboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->leaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:23:17 --> Undefined variable: students_details
+in APPPATH/Views/leaderboard.php on line 25.
+ 1 APPPATH/Views/leaderboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: students_details', 'APPPATH/Views/leaderboard.php', 25, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/leaderboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('leaderboard', [], true)
+ 5 APPPATH/Controllers/Leaderboard.php(26): view('leaderboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->leaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-18 07:23:18 --> Undefined variable: students_details
+in APPPATH/Views/leaderboard.php on line 25.
+ 1 APPPATH/Views/leaderboard.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: students_details', 'APPPATH/Views/leaderboard.php', 25, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/leaderboard.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('leaderboard', [], true)
+ 5 APPPATH/Controllers/Leaderboard.php(26): view('leaderboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->leaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

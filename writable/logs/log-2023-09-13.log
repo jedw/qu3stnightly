@@ -1,0 +1,9 @@
+CRITICAL - 2023-09-13 11:10:42 --> ini_set(): A session is active. You cannot change the session module's ini settings at this time
+in APPPATH/Controllers/BaseController.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): A session is active. You cannot change the session module\'s ini settings at this time', 'APPPATH/Controllers/BaseController.php', 111, [])
+ 2 APPPATH/Controllers/BaseController.php(111): ini_set('session.use_cookies', '0')
+ 3 APPPATH/Controllers/Quest.php(136): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

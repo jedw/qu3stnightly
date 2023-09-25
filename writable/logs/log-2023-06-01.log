@@ -1,0 +1,67 @@
+CRITICAL - 2023-06-01 05:17:57 --> Class 'App\Controllers\SessionModel' not found
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Quest->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 05:18:32 --> Class 'App\Models\QuestSessionModel' not found
+in APPPATH/Controllers/Quest.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(889): App\Controllers\Quest->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 05:41:06 --> Undefined index: answercorrect
+in APPPATH/Controllers/Quest.php on line 71.
+ 1 APPPATH/Controllers/Quest.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: answercorrect', 'APPPATH/Controllers/Quest.php', 71, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('blah')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 05:41:22 --> Undefined property: App\Controllers\Quest::$QuestModel
+in APPPATH/Controllers/Quest.php on line 69.
+ 1 APPPATH/Controllers/Quest.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Quest::$QuestModel', 'APPPATH/Controllers/Quest.php', 69, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('blah')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 05:42:26 --> Undefined property: App\Controllers\Quest::$QuestModel
+in APPPATH/Controllers/Quest.php on line 69.
+ 1 APPPATH/Controllers/Quest.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Quest::$QuestModel', 'APPPATH/Controllers/Quest.php', 69, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->solveriddle('blah')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 06:00:05 --> Too few arguments to function App\Controllers\Quest::startquest(), 1 passed in /home/jedw/public_html/challenge/system/CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH/Controllers/Quest.php on line 26.
+ 1 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->startquest('jon')
+ 2 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 3 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 06:00:30 --> Undefined variable: cateogry
+in APPPATH/Controllers/Quest.php on line 28.
+ 1 APPPATH/Controllers/Quest.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cateogry', 'APPPATH/Controllers/Quest.php', 28, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->startquest('jon')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 06:00:50 --> Undefined variable: cateogry
+in APPPATH/Controllers/Quest.php on line 28.
+ 1 APPPATH/Controllers/Quest.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cateogry', 'APPPATH/Controllers/Quest.php', 28, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->startquest('jon')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 06:00:52 --> Undefined variable: cateogry
+in APPPATH/Controllers/Quest.php on line 28.
+ 1 APPPATH/Controllers/Quest.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cateogry', 'APPPATH/Controllers/Quest.php', 28, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->startquest('jon')
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-01 06:37:53 --> Undefined property: App\Controllers\Quest::$QuestSessionModel
+in APPPATH/Controllers/Quest.php on line 97.
+ 1 APPPATH/Controllers/Quest.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Quest::$QuestSessionModel', 'APPPATH/Controllers/Quest.php', 97, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->activequests()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
