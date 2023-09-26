@@ -25,53 +25,58 @@
 </head>
 
 <body>
-	<h1>Challenge server API</h1>
+	<h1>The Computing Challenge 2023: Server API</h1>
 
-	<p>Welcome to the challenge server. This document describes how to interact with the challenge API</p>
+	<p>Welcome to the challenge server. This document describes how to interact with the API</p>
+	<hr>
 	<div class="container">
 		<h2>Endpoint URIs (uniform resource indicators)</h2>
 
 		<sub>*a.k.a. web addresses</sub>
 		<hr>
 
-		<h3>Leader board</h3>
+		<h3>Leaderboard</h3>
 		<h4>www.jedw.co.uk/challenge/getleaderboard</h4>
-		<p>Returns the current leader board. Teams are in order that they appear in the database i.e., in order of the
-			team code from A -Z and is not sorted by score. Please note that ‘id’ is arbitrary in terms of the team and
-			represents the primary key at database level. There are no options, and no inputs.</p>
+		<p>Returns the current leaderboard. Teams are in order that they appear in the database i.e., in order of the
+			team code from A -Z and is not sorted by score. Please note that ‘id’ is merely a row count and otherwise insignificant. There are no options, and no inputs.</p>
 		<h5>Sample output:</h5>
 
 		<pre><code class="language-json">[
-    {
-        "id": "1",
-        "teamcode": "A1",
-        "teamname": "Team Awesome",
-        "score": "100"
-    },
-    {
-        "id": "2",
-        "teamcode": "A2",
-        "teamname": "Winners",
-        "score": "10"
-    },
-    {
-        "id": "3"
-        "teamcode": "A3",
-        "teamname": "Champions",
-        "score": "20"
-    },
-    {
-        "id": "4",
-        "teamcode": "A4",
-        "teamname": "Mega",
-        "score": "15"
-    },
-    {
-        "id": "5",
-        "teamcode": "B1",
-        "teamname": "App Monsters",
-        "score": "0"
-    },
+	{
+		"id": "1",
+		"teamcode": "A1",
+		"teamname": "Team Awesome",
+		"score": "100",
+		"league": "Livesey"
+	},
+	{
+		"id": "2",
+		"teamcode": "A2",
+		"teamname": "Winners",
+		"score": "10",
+		"league": "Harris"
+	},
+	{
+		"id": "3"
+		"teamcode": "A3",
+		"teamname": "Champions",
+		"score": "20",
+		"league": "Victoria"
+	},
+	{
+		"id": "4",
+		"teamcode": "A4",
+		"teamname": "Mega",
+		"score": "15",
+		"league": "Darwin"
+	},
+	{
+		"id": "5",
+		"teamcode": "B1",
+		"teamname": "App Monsters",
+		"score": "0",
+		"league": "Livesey"
+	},
 ]</code></pre>
 		<p>Note: actual output will be significantly longer.</p>
 
@@ -105,13 +110,13 @@
 
 		<p>Quest category - a text string of alpha-numeric characters. Must match one of the available categories
 			available. <strong>The default is to omit this parameter</strong></p>
-		<p>Omitting this option will start the quest in the default quest mode.</p>
+		<p>Omitting this option will start the quest in the default mode which is practice riddles.</p>
 
 		<h5>Sample error: </h5>
 
 		<pre><code class="language-json">{
     "status": 1,
-    "msg": "missing parameter: player name"
+    "msg": "missing player name"
 }</code></pre>
 
 		<h5>Sample standard output:</h5>
@@ -120,7 +125,6 @@
     "session": "bc2b0abd2a7649a27fc4bb8ee63b43b3defad1c6",
     "player": "jonathan",
     "category": "quest",
-    "mode": "standard",
     "qnum": 1,
     "score": 0
 }</code></pre>
@@ -212,7 +216,7 @@
 
 		<pre><code class="language-json">{
     "status": 1,
-    "msg": "missing parameter: solution"
+    "msg": "missing solution"
 }</code></pre>
 
 		<h4>www.jedw.co.uk/challenge/quest/getclue</h4>
@@ -270,19 +274,16 @@
 		<h5>Sample output:</h5>
 		<p>Note: this is basically the same as the output from /status however from now on the position data should be included</p>
 		<pre><code class="language-json">{
-    "__ci_last_regenerate": 1686575928,
-    "session": "b779ade59cebfc21c0bfe6ac4c59d5f18263ccb2",
-    "player": "jon",
-    "category": "quest",
-    "mode": "standard",
+    "session": "eef46091a399a6d1819ac46acb37d2f4081bd24d",
+    "player": "jonathan",
+    "category": "practice_riddles",
     "qnum": 1,
-    "score": 0,
-    "lat": "53.7633452",
-    "lon": "-2.70917",
-    "_ci_previous_url": "http://jedw.co.uk/challenge/quest/submitlocation/53.7633452/-2.70917"
+    "score": 10,
+    "latitude": "53.7633452",
+    "longitude": "-2.70917",
 }</code></pre>
 
-		<p>Latitude - the current latiude coordinate e.g. 53.7633452</p>
+		<p>Latitude - the current latitude coordinate e.g. 53.7633452</p>
 		<p>Longitude - the current longitude coordinate e.g. -2.70917</p>
 
 		<h4>www.jedw.co.uk/challenge/quest/status</h4>
@@ -302,13 +303,11 @@
 		<h5>Sample output:</h5>
 
 		<pre><code class="language-json">{
-    "__ci_last_regenerate": 1686564155,
-    "session": "ba10a4b9b952e06b169bbdfeffed4aa2adbf88d2",
-    "player": "julie",
-    "category": "quest",
-    "mode": "standard",
+    "session": "eef46091a399a6d1819ac46acb37d2f4081bd24d",
+    "player": "jonathan",
+    "category": "practice_riddles",
     "qnum": 1,
-    "score": 0
+    "score": 10
 }</code></pre>
 
 <h4>www.jedw.co.uk/challenge/quest/endquest</h4>
@@ -331,7 +330,78 @@
 		<pre><code class="language-json">{
     "status": 0,
     "msg": "Quest ended, session destroyed"
-}</code></code>
+}</code></code></pre>
+
+<h3>www.jedw.co.uk/challenge/quest/gethighscores</h3>
+
+<p>Return top 10 high scores on the quest</p>
+
+<p><strong>URI Format: </strong>http://www.jedw.co.uk/challenge/gethighscores</p>
+<ul>
+<li>e.g. http://www.jedw.co.uk/challenge/quest/gethighscores</li>
+        <li>e.g. http://www.jedw.co.uk/challenge/quest/gethighscores/<span class="green">math</span></li>
+    </ul>
+    <p><strong>Required options:</strong></p>
+    <ul>
+        <li>none</li>
+    </ul>
+    <p><strong>Optional options:</strong></p>
+    <ul>
+        <li>category <span style="font-style: italic;">(Ignore, does nothing, this is for future development only)</span></li>
+    </ul>
+
+    <p><strong>Sample output: </strong></p>
+
+    <pre><code class="language-json">[
+    {
+        "id": "1",
+        "player": "jonathan",
+        "category": "general",
+        "score": "5"
+    },
+    {
+        "id": "4",
+        "player": "julie",
+        "category": "general",
+        "score": "4"
+    },
+    {
+        "id": "5",
+        "player": "ollie",
+        "category": "math",
+        "score": "4"
+    },
+    {
+        "id": "7",
+        "player": "matt",
+        "category": "cars",
+        "score": "4"
+    }
+]</code></pre>
+
+<h3>www.jedw.co.uk/challenge/quest/submithighscore</h3>
+
+<p>Submit new highscore for the current quest in session</p>
+
+<p><strong>URI Format: </strong>http://www.jedw.co.uk/challenge/quest/submighighscore</p>
+<ul>
+<li>e.g. http://www.jedw.co.uk/challenge/quest/submighighscore</li>
+    </ul>
+    <p><strong>Required options:</strong></p>
+    <ul>
+        <li>none</li>
+    </ul>
+    <p><strong>Optional options:</strong></p>
+    <ul>
+        <li>none</li>
+    </ul>
+   
+   <p><strong>Sample output:</strong></p>
+
+   <pre><code class="language-json">{
+    "status": 0,
+    "msg": "Success, High score submitted"
+}</code></pre>
 	</div>
 	<hr>
 	<p>Jonathan Edwards | 2023</p>

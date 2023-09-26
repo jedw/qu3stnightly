@@ -1,0 +1,59 @@
+CRITICAL - 2023-09-26 00:38:02 --> ini_set(): A session is active. You cannot change the session module's ini settings at this time
+in APPPATH/Controllers/BaseController.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): A session is active. You cannot change the session module\'s ini settings at this time', 'APPPATH/Controllers/BaseController.php', 111, [])
+ 2 APPPATH/Controllers/BaseController.php(111): ini_set('session.use_cookies', '0')
+ 3 APPPATH/Controllers/Quest.php(143): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 00:38:51 --> ini_set(): A session is active. You cannot change the session module's ini settings at this time
+in APPPATH/Controllers/BaseController.php on line 111.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): A session is active. You cannot change the session module\'s ini settings at this time', 'APPPATH/Controllers/BaseController.php', 111, [])
+ 2 APPPATH/Controllers/BaseController.php(111): ini_set('session.use_cookies', '0')
+ 3 APPPATH/Controllers/Quest.php(143): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 13:01:15 --> syntax error, unexpected '}', expecting ';'
+in APPPATH/Controllers/Quest.php on line 43.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 13:01:54 --> Undefined variable: session
+in APPPATH/Controllers/Quest.php on line 36.
+ 1 APPPATH/Controllers/Quest.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Quest.php', 36, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->status()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 13:03:23 --> Undefined variable: session
+in APPPATH/Controllers/Quest.php on line 36.
+ 1 APPPATH/Controllers/Quest.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Quest.php', 36, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->status()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 13:05:03 --> Undefined variable: session
+in APPPATH/Controllers/Quest.php on line 36.
+ 1 APPPATH/Controllers/Quest.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH/Controllers/Quest.php', 36, [])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->status()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-26 13:09:03 --> syntax error, unexpected '}', expecting ')'
+in APPPATH/Controllers/Quest.php on line 137.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Quest.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Quest')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Quest')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Quest')
+ 5 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\Quest', true)
+ 6 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

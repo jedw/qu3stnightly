@@ -30,7 +30,16 @@ class Quest extends BaseController
     public function status()
     {
         $this->startSession();
-        return $this->response->setJSON($_SESSION);
+        // return $this->response->setJSON($_SESSION);
+        return $this->response->setJSON(
+            [
+                'session' => $_SESSION['session'],
+                'player' => $_SESSION['player'],
+                'category' => $_SESSION['category'],
+                'qnum' => $_SESSION['qnum'],
+                'score' => $_SESSION['score']
+            ]
+        );
     }
 
     public function startquest($name = false, $category = false)
@@ -72,6 +81,7 @@ class Quest extends BaseController
         {
             $this->questsessiontodb();
             return $this->response->setJSON(['status' => 0, 'msg' => 'Your have reached the end of the quest, congratulations! ...', 'final score' => $session->get('score')]);
+	    $this->endquest();
         }
         else
 	    {
@@ -113,7 +123,18 @@ class Quest extends BaseController
         $session->set('lat', $lat);
         $session->set('lon', $lon);
         // $this->questsessiontodb();
-        return $this->response->setJSON($_SESSION);
+        // return $this->response->setJSON($_SESSION);
+        return $this->response->setJSON(
+            [
+                'session' => $_SESSION['session'],
+                'player' => $_SESSION['player'],
+                'category' => $_SESSION['category'],
+                'qnum' => $_SESSION['qnum'],
+                'score' => $_SESSION['score'],
+                'latitude' => $_SESSION['lat'],
+                'longitude' => $_SESSION['lon']
+            ]
+        );
     }
 
     public function getclue()
