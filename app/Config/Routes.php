@@ -39,13 +39,14 @@ $routes->get('getleaderboard', 'Leaderboard::getleaderboard');
 
 $routes->get('leaderboard', 'Leaderboard::leaderboard');
 
-$routes->get('scorepanel/(:any)', 'Leaderboard::scorepanel/$1');
+$routes->get('panel/(:any)', 'Leaderboard::scorepanel/$1');
 
 $routes->post('addtoscore', 'Leaderboard::addtoscore');
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Quiz::index');
+$routes->get('/', 'Quest::index');
+$routes->get('quiz', 'Quiz::index');
 // api call get categories - optional call to discover new categories
 $routes->get('getcategories', 'Quiz::getcategories');
 // api call start quiz requires uri segment specifying player name e.g. startquiz/jonathan uri segment to pick category is optional e.g. startquiz/jonathan/math
@@ -93,6 +94,7 @@ $routes->get('quest/getclue', 'Quest::getclue');
 $routes->get('quest/shuffle', 'Quest::shuffle');
 // api call to get high scores
 $routes->get('quest/gethighscores', 'Quest::gethighscores');
+$routes->get('quest/gethighscores/(:any)', 'Quest::gethighscores/$1');
 // api call to submit quiz high-scores
 $routes->get('quest/submithighscore', 'Quest::submithighscore');
 

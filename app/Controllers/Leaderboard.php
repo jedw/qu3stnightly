@@ -9,7 +9,259 @@ class Leaderboard extends BaseController
     {
         $LeaderboardModel = new LeaderboardModel();
         $response = $LeaderboardModel->findAll();
-        return $this->response->setJSON($response);
+        return $this->response->setJSON($response); // temporary takedown
+
+        /*$dummy = array(
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            ),
+            array(
+                "id"=> "?",
+                "teamcode"=> "?",
+                "teamname"=> "?",
+                "score"=> "?",
+                "league"=> "?"
+            )
+        );*/
+
+        return $this->response->setJSON($dummy);
+       
+        
     }
 
     /* public function getsorted()
@@ -24,11 +276,13 @@ class Leaderboard extends BaseController
         $LeaderboardModel = new LeaderboardModel();
         $response["leaderboard"] = $LeaderboardModel->orderBy("score","DESC")->findAll();
         return view('leaderboard', $response);
+
+        //return ('?');
     }
 
     public function scorepanel($password = false)
     {
-        if ((!$password) or ($password != "opensesame"))
+        if ((!$password) or ($password != "secretsauce"))
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         return view('scorepanel');
     }

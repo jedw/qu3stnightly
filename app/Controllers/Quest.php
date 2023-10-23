@@ -61,7 +61,7 @@ class Quest extends BaseController
         ];
         $session->set($ses_data);
         // $this->questsessiontodb();
-        return $this->response->setJSON(['session' => $ses_data['session'], 'player' => $ses_data['player'], 'cateogry' => $ses_data['category'], 'mode' => $ses_data['mode'], 'score' => $ses_data['score']]);
+        return $this->response->setJSON(['session' => $ses_data['session'], 'player' => $ses_data['player'], 'category' => $ses_data['category'], 'mode' => $ses_data['mode'], 'score' => $ses_data['score']]);
         
     }
 
@@ -80,7 +80,7 @@ class Quest extends BaseController
         if(!$return)
         {
             $this->questsessiontodb();
-            return $this->response->setJSON(['status' => 0, 'msg' => 'Your have reached the end of the quest, congratulations! ...', 'final score' => $session->get('score')]);
+            return $this->response->setJSON(['status' => 0, 'complete' => 'true', 'msg' => 'You have reached the end of the quest, congratulations! ...', 'final score' => $session->get('score')]);
 	    $this->endquest();
         }
         else
@@ -113,6 +113,8 @@ class Quest extends BaseController
         else
         {
             // $this->questsessiontodb();
+            $score = $session->get('score') - 2;
+            $session->set('score', $score);
             return $this->response->setJSON(['status' => 0, 'msg' => 'incorrect', 'score' => $session->get('score')]);
         } 
     }
@@ -160,8 +162,8 @@ class Quest extends BaseController
 
     public function endquest()
     {
-        $this->questsessiontodb();
         $session = $this->startSession();
+        $this->questsessiontodb();
         $session->stop();
         $session->destroy();
         // $this->questsessionxdb();
@@ -174,21 +176,20 @@ class Quest extends BaseController
         return $this->response->setJSON($response);
     }
 	
-    public function gethighscores (/*$category = false*/)
+    public function gethighscores ($category = false)
     {
         $this->QHighScoreModel->orderby('score', 'DESC');
-        $this->QHighScoreModel->limit(10);
-       // if(!$category)
-            $response = $this->QHighScoreModel->findAll();
-       // else
-       //     $response = $this->QHighScoreModel->where('category', $category)->findAll();
+        if(!$category)
+            $response = $this->QHighScoreModel->findAll(10);
+        else
+            $response = $this->QHighScoreModel->where('category', $category)->findAll(10);
         return $this->response->setJSON($response);
     }
 
     public function submithighscore()
     {
         $session = $this->startSession();
-        $this->QHighScoreModel->insert(["player" => $session->get('player'), "score" => $session->get('score')]);
+        $this->QHighScoreModel->insert(["player" => $session->get('player'), "score" => $session->get('score'), "category" => $session->get('category')]);
         return $this->response->setJSON(['status' => 0, 'msg' => 'Success, High score submitted']);
     }
 

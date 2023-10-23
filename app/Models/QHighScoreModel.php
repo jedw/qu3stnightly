@@ -7,7 +7,7 @@ class QHighScoreModel extends Model
 {
     protected $table = 'qhighscores';
     protected $primarykey = 'id';
-    protected $allowedFields = ['id', 'player', 'score'];
+    protected $allowedFields = ['id', 'player', 'score', 'category'];
     protected $returnType = 'array';
 }
 

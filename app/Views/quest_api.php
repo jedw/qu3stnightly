@@ -38,7 +38,7 @@
 		<h3>Leaderboard</h3>
 		<h4>www.jedw.co.uk/challenge/getleaderboard</h4>
 		<p>Returns the current leaderboard. Teams are in order that they appear in the database i.e., in order of the
-			team code from A -Z and is not sorted by score. Please note that ‘id’ is merely a row count and otherwise insignificant. There are no options, and no inputs.</p>
+			team code from A -Z and are not sorted by score. Please note that ‘id’ is merely a row count and otherwise insignificant. There are no options, and no inputs.</p>
 		<h5>Sample output:</h5>
 
 		<pre><code class="language-json">[
@@ -85,7 +85,7 @@
 
 		<h4>www.jedw.co.uk/challenge/quest/startquest</h4>
 
-		<p>Begins the quest. Requires the players name as input. Once the quest has bene started returns the newly
+		<p>Begins the quest. Requires the players name as input. Once the quest has been started returns the newly
 			created user session.</p>
 		<h5>URI Format: </h5>
 
@@ -332,14 +332,13 @@
     "msg": "Quest ended, session destroyed"
 }</code></code></pre>
 
-<h3>www.jedw.co.uk/challenge/quest/gethighscores</h3>
+<h4>www.jedw.co.uk/challenge/quest/gethighscores</h4>
 
 <p>Return top 10 high scores on the quest</p>
 
 <p><strong>URI Format: </strong>http://www.jedw.co.uk/challenge/gethighscores</p>
 <ul>
 <li>e.g. http://www.jedw.co.uk/challenge/quest/gethighscores</li>
-        <li>e.g. http://www.jedw.co.uk/challenge/quest/gethighscores/<span class="green">math</span></li>
     </ul>
     <p><strong>Required options:</strong></p>
     <ul>
@@ -356,36 +355,36 @@
     {
         "id": "1",
         "player": "jonathan",
-        "category": "general",
+        "category": "practice_riddles",
         "score": "5"
     },
     {
         "id": "4",
         "player": "julie",
-        "category": "general",
+        "category": "practice_riddles",
         "score": "4"
     },
     {
         "id": "5",
         "player": "ollie",
-        "category": "math",
+        "category": "practice_riddles",
         "score": "4"
     },
     {
         "id": "7",
         "player": "matt",
-        "category": "cars",
+        "category": "practice_riddles",
         "score": "4"
     }
 ]</code></pre>
 
-<h3>www.jedw.co.uk/challenge/quest/submithighscore</h3>
+<h4>www.jedw.co.uk/challenge/quest/submithighscore</h4>
 
 <p>Submit new highscore for the current quest in session</p>
 
-<p><strong>URI Format: </strong>http://www.jedw.co.uk/challenge/quest/submighighscore</p>
+<p><strong>URI Format: </strong>http://www.jedw.co.uk/challenge/quest/submithighscore</p>
 <ul>
-<li>e.g. http://www.jedw.co.uk/challenge/quest/submighighscore</li>
+<li>e.g. http://www.jedw.co.uk/challenge/quest/submithighscore</li>
     </ul>
     <p><strong>Required options:</strong></p>
     <ul>
@@ -396,6 +395,16 @@
         <li>none</li>
     </ul>
    
+		<h5>Important:</h5>
+
+		<p>For use with a client that doesn't support session cookies, the session ID is required to be passed back
+			through the URL in the following format:
+		</p>
+
+		<ul>
+			<li>e.g. http://www.jedw.co.uk/challenge/quest/submithighscores<span class="green">?PHPSESSID={session id goes
+					here}</span></li>
+		</ul>
    <p><strong>Sample output:</strong></p>
 
    <pre><code class="language-json">{

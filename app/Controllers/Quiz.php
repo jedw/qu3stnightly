@@ -17,7 +17,7 @@ class Quiz extends BaseController
     
     public function index()
     {
-        return view('quest_api');
+        return view('api');
     }
 
     public function status()

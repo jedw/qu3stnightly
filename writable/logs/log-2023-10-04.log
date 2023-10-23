@@ -1,0 +1,123 @@
+ERROR - 2023-10-04 08:35:49 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'jedw', 'Toronado47', 'jedw', 3306, '', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#6 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-04 08:35:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `leaderboard`', [], false)
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 08:35:56 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'jedw', 'Toronado47', 'jedw', 3306, '', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#6 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-04 08:35:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `leaderboard`', [], false)
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-04 08:36:01 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'jedw', 'Toronado47', 'jedw', 3306, '', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/jedw/public_html/challenge/system/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/jedw/public_html/challenge/system/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/jedw/public_html/challenge/app/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+#6 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+#7 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-04 08:36:01 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `leaderboard`', [], false)
+ 3 SYSTEMPATH/Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Leaderboard.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Leaderboard->getleaderboard()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Leaderboard))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,189 @@
+ERROR - 2023-10-12 03:48:34 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-12 04:25:44 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-12 04:26:07 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-12 07:52:01 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('098aa7d17bd1082a390159aad14f704e39208034')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:52:05 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('098aa7d17bd1082a390159aad14f704e39208034?PHPSESSID=098aa7d17bd1082a390159aad14f704e39208034')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-12 07:52:36 --> mysqli_sql_exception: Column 'session' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `q...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `q...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `q...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `q...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(1059): CodeIgniter\Model->doReplace(Array, false)
+#6 /home/jedw/public_html/challenge/app/Controllers/BaseController.php(99): CodeIgniter\BaseModel->replace(Array)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(163): App\Controllers\BaseController->questsessiontodb()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-12 07:53:15 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('098aa7d17bd1082a390159aad14f704e39208034')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:53:19 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('098aa7d17bd1082a390159aad14f704e39208034')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:53:20 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('098aa7d17bd1082a390159aad14f704e39208034')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:55:04 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('304f6d49109d7f44301a4709dba70f559f72265c')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:55:06 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('304f6d49109d7f44301a4709dba70f559f72265c')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 07:56:18 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('304f6d49109d7f44301a4709dba70f559f72265c')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:06:04 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('67f9f345103e98b758ec271cd76c6386d855ffbd')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-12 08:29:43 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-12 09:16:08 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('e31b94a7afb7a87d79abbaa89c52fc5fe77d1cfb')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-12 15:36:25 --> mysqli_sql_exception: Column 'session' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('REPLACE INTO `q...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('REPLACE INTO `q...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('REPLACE INTO `q...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(2002): CodeIgniter\Database\BaseConnection->query('REPLACE INTO `q...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(439): CodeIgniter\Database\BaseBuilder->replace(Array)
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(1059): CodeIgniter\Model->doReplace(Array, false)
+#6 /home/jedw/public_html/challenge/app/Controllers/BaseController.php(99): CodeIgniter\BaseModel->replace(Array)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(163): App\Controllers\BaseController->questsessiontodb()
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-12 15:36:25 --> session_id(): Cannot change session id when session is active
+in APPPATH/Controllers/BaseController.php on line 116.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_id(): Cannot change session id when session is active', 'APPPATH/Controllers/BaseController.php', 116, [])
+ 2 APPPATH/Controllers/BaseController.php(116): session_id('e21e9aa9b3092ac195937915261ae07389bde2cb')
+ 3 APPPATH/Controllers/Quest.php(164): App\Controllers\BaseController->startSession()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Quest->endquest()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,30 @@
+ERROR - 2023-10-10 08:35:58 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-10 08:37:13 --> mysqli_sql_exception: Column 'player' cannot be null in /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /home/jedw/public_html/challenge/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `qh...', 0)
+#1 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `qh...')
+#2 /home/jedw/public_html/challenge/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `qh...')
+#3 /home/jedw/public_html/challenge/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `qh...', Array, false)
+#4 /home/jedw/public_html/challenge/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/jedw/public_html/challenge/system/BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 /home/jedw/public_html/challenge/system/Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/jedw/public_html/challenge/app/Controllers/Quest.php(191): CodeIgniter\Model->insert(Array)
+#8 /home/jedw/public_html/challenge/system/CodeIgniter.php(927): App\Controllers\Quest->submithighscore()
+#9 /home/jedw/public_html/challenge/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quest))
+#10 /home/jedw/public_html/challenge/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/jedw/public_html/challenge/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}

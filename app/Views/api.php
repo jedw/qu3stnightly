@@ -19,16 +19,16 @@
     <script>hljs.highlightAll();</script>
 </head>
 <body>
-    <h1>Challenge server API</h1>
+    <h1>Quiz API</h1>
 
-    <p>Welcome to the challenge server. This document describes how to interact with the quiz API</p>
+    <p>Welcome to the challenge server. This document describes how to interact with the multi-choice quiz API</p>
 <div class="container">
     <h2>Endpoint URIs (uniform resource indicators)</h2>
 
     <sub>*a.k.a. web addresses</sub>
     <hr>
 
-    <h3>www.jedw.co.uk/challenge</h3>
+    <h3>www.jedw.co.uk/challenge/quiz/quiz</h3>
 
         <p>This page</p>
         <p>returns HTML. NO JSON. Serves no other function than as as a welcome message and documentation</p>
